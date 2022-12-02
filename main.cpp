@@ -22,13 +22,13 @@ int main(void)
     i=0;                                // set index of name[] array to 0
     printf("Input ALL your name ? ");        // prompt for user name
     name[0]=getc(stdin);                // put a char in element 0
-   // putc(name[0],stdout);
+    putc(name[0],stdout);
     fflush(stdout);
     while(name[i]!=0x0a)                // while not <return> or <enter>
     {
         ++i;                            // move to next element of array
         name[i]=getc(stdin);            // put another char into name array
-      //  putc(name[i],stdout);
+        putc(name[i],stdout);
         fflush(stdout);
         if(name[i]==0x7f)               // if <DEL> char 
         {
