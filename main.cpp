@@ -32,6 +32,7 @@ int main(void)
         fflush(stdout);
         if(name[i]==0x7f)               // if <DEL> char 
         {
+            putc(0x08,stdout);          // use <BS> to move cursor back 1 char
             --i;                        // move index back one for <DEL>
             --i;                        // move index back one for char
         }
